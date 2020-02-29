@@ -3,7 +3,8 @@
 
 # Here is sample how to use
 
-`// start embedded elasti
+
+`// start embedded elastic
  EmbeddedElastic embeddedElastic = EmbeddedElastic.builder()
                 .withElasticVersion("7.6.0")
                 .withSetting(PopularProperties.HTTP_PORT, ElasticTestUtils.ELASTIC_PORT)
@@ -11,6 +12,7 @@
                 .withSetting("xpack.ml.enabled", false)
                 .withStartTimeout(2, TimeUnit.MINUTES)
                 .withIndex("admissions").build().start();
+
 
 
 // stop elastic
